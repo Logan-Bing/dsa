@@ -2,7 +2,9 @@ CC = cc
 FLAGS = -Wall -Werror -Wextra
 NAME = exec
 OBJDIR = build
-SRCS = utils.c 0_reverse.c
+SRCS = utils.c \
+			 0_reverse.c \
+			 1_merge_two_sorted_list.c
 OBJS = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
 all: $(NAME)
@@ -15,7 +17,7 @@ $(OBJDIR)/%.o: %.c
 	$(CC) -c $< -o $@ 
 
 clean:
-	rm -rf $(OBJS)
+	rm -rf $(OBJDIR)
 
 fclean: clean
 	rm -rf $(NAME)
