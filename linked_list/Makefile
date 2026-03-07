@@ -4,7 +4,9 @@ NAME = exec
 OBJDIR = build
 SRCS = utils.c \
 			 0_reverse.c \
-			 1_merge_two_sorted_list.c
+			 1_merge_two_sorted_list.c \
+			 2_list_cycle.c \
+
 OBJS = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
 all: $(NAME)
