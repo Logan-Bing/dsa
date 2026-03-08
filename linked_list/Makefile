@@ -6,6 +6,7 @@ SRCS = utils.c \
 			 0_reverse.c \
 			 1_merge_two_sorted_list.c \
 			 2_list_cycle.c \
+			 3_remove_nth_from_the_end.c \
 
 OBJS = $(addprefix $(OBJDIR)/, $(SRCS:.c=.o))
 
