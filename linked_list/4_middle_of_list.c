@@ -12,15 +12,3 @@ struct ListNode* middleNode(struct ListNode* head)
   }
   return (slow);
 }
-
-int main() {
-  t_list *head = NULL;
-  t_list *node;
-  for (int i = 1; i < 5; i++){
-    node = create_node(i);
-    push_back(&head, node);
-  }
-
-  t_list *middle = middleNode(head);
-  print_list(middle);
-}
